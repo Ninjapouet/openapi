@@ -1,6 +1,6 @@
 (lang dune 2.4)
 
-(name openapi)
+(name OpenAPI)
 
 (generate_opam_files true)
 
@@ -8,7 +8,7 @@
 (bug_reports "https://github.com/Ninjapouet/openapi/issues")
 
 (package
- (name openapi)
+ (name OpenAPI)
  (synopsis "OpenAPI tools")
  (depends
   (ppx_deriving (>= 4.4.1))
