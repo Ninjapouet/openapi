@@ -361,4 +361,19 @@ sig
     tags : Tag.t list [@default []];
     externalDocs : ExternalDocumentation.t option;
   }[@@deriving make, protocol ~driver:(module Jsonm)]
+
+  val of_channel : in_channel -> t
+
+  val of_string : string -> t
+
+  val to_channel : ?minify:bool -> out_channel -> t -> unit
+
+  val to_buffer : ?minify:bool -> Buffer.t -> t -> unit
+
+  val to_string : ?minify:bool -> t -> string
+
+  val pp : t Fmt.t
+
 end
+
+include module type of OpenAPI

@@ -453,8 +453,29 @@ module OpenAPI = struct
     tags : Tag.t list [@default []];
     externalDocs : ExternalDocumentation.t option;
   }[@@deriving make, protocol ~driver:(module Jsonm)]
+
+  let of_channel : in_channel -> t = fun ic ->
+    let json = Ezjsonm.value_from_channel ic in
+    of_jsonm_exn json
+
+  let of_string : string -> t = fun str ->
+    let json = Ezjsonm.value_from_string str in
+    of_jsonm_exn json
+
+  let to_channel : ?minify:bool -> out_channel -> t -> unit = fun ?minify oc t ->
+    let json = to_jsonm t in
+    Ezjsonm.value_to_channel ?minify oc json
+
+  let to_buffer : ?minify:bool -> Buffer.t -> t -> unit = fun ?minify buf t ->
+    let json = to_jsonm t in
+    Ezjsonm.value_to_buffer ?minify buf json
+
+  let to_string : ?minify:bool -> t -> string = fun ?minify t ->
+    let json = to_jsonm t in
+    Ezjsonm.value_to_string ?minify json
+
+  let pp : t Fmt.t = fun ppf t -> Fmt.pf ppf "%s" (to_string ~minify:false t)
+
 end
 
 include OpenAPI
-
-(* let pp_base : ?minify:bool -> t Fmt.t = fun ?minify ppf t -> *)

@@ -2,5 +2,5 @@
  (name openapi)
  (public_name openapi)
  (modules openapi)
- (libraries ppx_protocol_conv.runtime ppx_protocol_conv_jsonm)
+ (libraries ppx_protocol_conv.runtime ppx_protocol_conv_jsonm fmt ezjsonm)
  (preprocess (pps ppx_deriving.std ppx_protocol_conv)))

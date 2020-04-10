@@ -12,7 +12,9 @@
  (synopsis "OpenAPI tools")
  (depends
   (ppx_deriving (>= 4.4.1))
-  (ppx_protocol_conv (>= 5.1.0)))
+  (ppx_protocol_conv (>= 5.1.0))
+  (fmt (>= 0.8.8))
+  (ezjsonm (>= 1.1.0)))
  (tags ("openapi" "api"))
  (license "Apache 2.0")
  (authors "Julien Blond <julien.blond@gmail.com>")
