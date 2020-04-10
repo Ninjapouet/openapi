@@ -1,5 +1,7 @@
 (lang dune 2.4)
 
+(name openapi)
+
 (generate_opam_files true)
 
 (source (github Ninjapouet/openapi))
