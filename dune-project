@@ -18,4 +18,5 @@
  (tags ("openapi" "api"))
  (license "Apache 2.0")
  (authors "Julien Blond <julien.blond@gmail.com>")
+ (maintainers "Julien Blond <julien.blond@gmail.com>")
 )
