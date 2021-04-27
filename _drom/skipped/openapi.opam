@@ -2,7 +2,7 @@
 # Do not modify, or add to the `skip` field of `drom.toml`.
 opam-version: "2.0"
 name: "openapi"
-version: "0.1.0"
+version: "0.1.1"
 license: "LGPL-2.1-only with OCaml-LGPL-linking-exception"
 synopsis: "The openapi project"
 description: """
@@ -12,6 +12,11 @@ of the openapi OCaml project
 """
 authors: ["Julien BLOND <julien.blond@bertin.fr>"]
 maintainer: ["Julien BLOND <julien.blond@bertin.fr>"]
+homepage: "https://github.com/Ninjapouet/openapi"
+doc: "https://Ninjapouet.github.io/openapi/sphinx"
+bug-reports: "https://github.com/Ninjapouet/openapi/issues"
+dev-repo: "git+https://github.com/Ninjapouet/openapi.git"
+tags: "org:Ninjapouet"
 build: [
   ["dune" "subst"] {dev}
   ["sh" "-c" "./scripts/before.sh build '%{name}%'"]
@@ -35,6 +40,7 @@ depends: [
   "ocaml" {>= "4.07.0"}
   "dune" {>= "2.6.0"}
   "ppx_protocol_conv_jsonm" {}
+  "fmt" {}
   "ppx_protocol_conv" {}
   "ppx_deriving" {}
   "ppx_inline_test" {with-test}
