@@ -10,9 +10,13 @@ Welcome to openapi
    :maxdepth: 2
    :caption: Documentation
 
+   Home <https://github.com/Ninjapouet/openapi>
    about
    install
+   API doc <https://Ninjapouet.github.io/openapi/doc>
    license
+
+   Devel and Issues on Github <https://github.com/Ninjapouet/openapi>
 
 
 Indices and tables

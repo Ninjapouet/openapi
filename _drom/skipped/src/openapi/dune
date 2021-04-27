@@ -4,9 +4,9 @@
   (name openapi)
   (public_name openapi)
   (wrapped false)
-  (libraries ppx_protocol_conv_jsonm )
+  (libraries ppx_protocol_conv_jsonm fmt )
   
-  (preprocess (pps ppx_protocol_conv ppx_deriving))
+  (preprocess (pps ppx_protocol_conv ppx_deriving.std))
   )
 
 

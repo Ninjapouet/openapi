@@ -12,6 +12,11 @@ of the openapi OCaml project
 """
 authors: ["Julien BLOND <julien.blond@bertin.fr>"]
 maintainer: ["Julien BLOND <julien.blond@bertin.fr>"]
+homepage: "https://github.com/Ninjapouet/openapi"
+doc: "https://Ninjapouet.github.io/openapi/sphinx"
+bug-reports: "https://github.com/Ninjapouet/openapi/issues"
+dev-repo: "git+https://github.com/Ninjapouet/openapi.git"
+tags: "org:Ninjapouet"
 depends: [
   "ocaml" {>= "4.07.0"}
   "dune" {>= "2.6.0"}

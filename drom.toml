@@ -10,18 +10,18 @@ license = "LGPL2"
 min-edition = "4.07.0"
 name = "openapi"
 synopsis = "The openapi project"
-version = "0.1.0"
+version = "0.1.1"
 
 # keys that you could also define:
 # odoc-target = "...odoc-target..."
 # sphinx-target = "...sphinx-target..."
 # archive = "...archive..."
 # dev-repo = "...dev-repo..."
-# bug-reports = "...bug-reports..."
+bug-reports = "https://github.com/Ninjapouet/openapi/issues"
 # doc-api = "...doc-api..."
 # doc-gen = "...doc-gen..."
-# homepage = "...homepage..."
-# github-organization = "...github-organization..."
+homepage = "https://github.com/Ninjapouet/openapi"
+github-organization = "Ninjapouet"
 
 [project]
 description = """\n
