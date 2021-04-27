@@ -1,0 +1,7 @@
+Licenses known by drom:
+* BSD2 -> BSD-2-Clause
+* BSD3 -> BSD-3-Clause
+* GPL3 -> GPL-3.0-only
+* ISC -> ISC
+* LGPL2 -> LGPL-2.1-only with OCaml-LGPL-linking-exception
+* MIT -> MIT

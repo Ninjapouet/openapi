@@ -1,0 +1,12 @@
+{1 Library openapi}
+
+
+
+This is the description
+of the openapi OCaml project
+
+
+
+This library exposes the following toplevel modules:
+{!modules:OpenAPI}
+

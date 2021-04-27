@@ -1,0 +1,9 @@
+{1 Library openapi_lib}
+
+This is the description
+of the openapi OCaml project
+
+
+
+The entry point of this library is the module: {!Openapi_lib}.
+

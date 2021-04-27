@@ -1,0 +1,2 @@
+project skeletons: c_binding ctypes_foreign ctypes_stubs js_lib js_prg library menhir mini_lib mini_prg ppx_deriver ppx_rewriter program virtual vue wasm_binding
+package skeletons: c_binding ctypes_drv ctypes_lib_foreign ctypes_lib_stubs driver js_driver js_library js_program library menhir_lib ppx_deriver ppx_rewriter program virtual vue_library wasm_binding
